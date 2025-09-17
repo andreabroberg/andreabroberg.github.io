@@ -1,0 +1,141 @@
+/* ====== Grundinställningar ====== */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #111;   /* mörk bakgrund */
+  color: #f2f2f2;           /* ljus text */
+  line-height: 1.6;
+}
+
+/* ====== Navigationsmeny ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+/* ====== Välkomstmeddelande ====== */
+.welcome-bar {
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 60px;   /* flyttar in från vänster */
+  font-size: 1rem;
+}
+
+/* ====== Hero-sektion ====== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  flex-wrap: wrap; /* gör så att det funkar i mobilen */
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 10px;
+  border-radius: 6px;
+  background-color: #444;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+/* ====== Profilbild ====== */
+.hero-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #444;
+}
+
+/* ====== Kunskaper ====== */
+.skills {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-box {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+.skill-box h3 {
+  margin-bottom: 10px;
+}
+
+/* ====== Footer (om du vill lägga till senare) ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
